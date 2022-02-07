@@ -90,6 +90,10 @@ public class ChanelcomTestInterview{
 
        //     5- Sepeti Görüntüle --> Tamam, eğer sepette "ROUGE ALLURE" ürünü varsa adet=1 ve toplam sepet ürün fiyatına eşittir.
        chanelcomPage.sepetButton.click();
+       SoftAssert softAssert=new SoftAssert();
+
+       softAssert.assertTrue(chanelcomPage.sepettekiUrun.isDisplayed());
+       softAssert.assertEquals(chanelcomPage.urunFiyat,chanelcomPage.totaLPrice);
 
    }
 

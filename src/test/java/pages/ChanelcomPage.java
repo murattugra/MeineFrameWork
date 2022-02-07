@@ -45,13 +45,19 @@ public class ChanelcomPage {
     @FindBy(xpath = "//button[@id='pos-cnc-btn']")
     public WebElement addButon;
 
+    @FindBy(xpath = "//p[@class='product-details__price']")
+    public WebElement urunFiyat;
+
     @FindBy(xpath = "(//button[@class='button is-icon sidepanel__close js-sidepanel-close'])[2]")
     public WebElement xIsareti;
 
-    @FindBy(xpath = "//button[@title='Shopping Bag - 1 item']")
+    @FindBy(xpath = "//button[@class='js-cart cart button nav-item has-product']")
     public WebElement sepetButton;
 
     @FindBy(xpath = "//span[@class='heading is-7']")
     public WebElement sepettekiUrun;
+
+    @FindBy(xpath = "//td[@class='is-bold js-cart-price-total']")
+    public WebElement totaLPrice;
 
 }
