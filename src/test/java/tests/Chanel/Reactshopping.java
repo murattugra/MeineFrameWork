@@ -12,7 +12,7 @@ import java.util.List;
 public class Reactshopping {
 
 
-    @Test
+    @Test(groups = "deneme")
     public void test01() throws InterruptedException {
 
         // 1."https://react-shopping-cart-67954.firebaseapp.com/" adresine gidin

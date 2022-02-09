@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli metodlar">
+    <test name="metotlar">
+        <classes>
+            <class name="tests.Chanel.ChanelcomTestInterview">
+                <methods>
+                    <include name="test01"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

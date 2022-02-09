@@ -73,7 +73,7 @@ public class ChanelcomTestInterview{
         Driver.closeDriver();
 
     }
-   @Test
+   @Test(groups = "deneme")
     public void test02(){
        //2. test:
        //     1- Siteye erişim

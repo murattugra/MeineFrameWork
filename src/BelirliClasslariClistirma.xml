@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli claslar">
+    <test name="belirli claslaari calistirma">
+        <classes>
+            <class name="tests.Chanel.ResuableMethods"></class>
+            <class name="tests.Chanel.Reactshopping"></class>
+        </classes>
+    </test>
+</suite>

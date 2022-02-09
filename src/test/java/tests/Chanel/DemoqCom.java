@@ -1,6 +1,9 @@
 package tests.Chanel;
 
-public class cc {
+import org.testng.annotations.Test;
+import utilities.Driver;
+
+public class DemoqCom {
 
 
     // TESTNG POM
@@ -16,8 +19,6 @@ public class cc {
     // Etkileşimler (Bırakılabilir düğmeyi tıklayın ve basit modülün altındaki "beni sürükle" kutusunu "bırak beni" kutusuna sürükleyin ve bırakıldığını doğrulayın.)
     // Widget'lar ( Araç İpuçları düğmesini tıklayın, "Görmek için beni gezdirin" düğmesinin üzerine gelin ve "Vurduğunuzu doğrulayın"
     // Düğmenin üzerinde" mesajının ardından "Görmek için beni gezdirin" metin alanının üzerine gelin ve "Metin alanının üzerine geldiniz" mesajını doğrulayın.
-
-
 
 
 

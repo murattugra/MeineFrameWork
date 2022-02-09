@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="gruplari calistirma">
+    <test name="gruplar">
+        <groups>
+            <run>
+                <include name="deneme"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.Chanel"></package>
+        </packages>
+    </test>
+</suite>
