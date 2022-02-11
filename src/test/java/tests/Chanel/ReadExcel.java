@@ -48,7 +48,7 @@ public class ReadExcel {
 
         //dosya yolu ve sayfa ismi verilen bir excel sheet i map olarak kaydeden
         // reusable bir method olusturalim
-        Map<String,String> excelMap=ResuableMethods.mapOlustur(path,"Sayfa1");
+        Map<String,String> excelMap=ResuableMethodsIlk.mapOlustur(path,"Sayfa1");
         // turkiye nin bilgilerii getirin
 
         System.out.println(excelMap.get("Turkey"));

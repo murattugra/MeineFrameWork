@@ -9,10 +9,11 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.ChanelcomPage;
 import utilities.Driver;
+import utilities.TestBaseRapor;
 
 import java.util.List;
 
-public class ChanelcomTestInterview{
+public class ChanelcomTestInterview extends TestBaseRapor {
 
     // https://www.chanel.com/us/
     //1st test:
@@ -38,6 +39,7 @@ public class ChanelcomTestInterview{
     }
     @Test
     public void test01(){
+        extentTest=extentReports.createTest("ChanelePage rpaor");
         //https://www.chanel.com/us/
         //1. test:
         Driver.getDriver().get("https://www.chanel.com/us/");

@@ -1,6 +1,8 @@
 package tests.Chanel;
 
 import org.testng.annotations.Test;
+import pages.DemoqaPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class DemoqCom {
@@ -13,14 +15,24 @@ public class DemoqCom {
     // Widgets ( click tool Tips button, hover over the “Hover me to see” button and verify the “You Hovered
     // Over the button” message then hover over the “Hover me to see” text field and verify “You hovered the text field” message.
 
-    // POM TESTİ
-    // https://demoqa.com/ adresine gidin, otomatik bir test yazın
-    // Uyarılar (tüm uyarıları yönetin)
-    // Etkileşimler (Bırakılabilir düğmeyi tıklayın ve basit modülün altındaki "beni sürükle" kutusunu "bırak beni" kutusuna sürükleyin ve bırakıldığını doğrulayın.)
-    // Widget'lar ( Araç İpuçları düğmesini tıklayın, "Görmek için beni gezdirin" düğmesinin üzerine gelin ve "Vurduğunuzu doğrulayın"
-    // Düğmenin üzerinde" mesajının ardından "Görmek için beni gezdirin" metin alanının üzerine gelin ve "Metin alanının üzerine geldiniz" mesajını doğrulayın.
 
 
+
+    @Test
+public void pomTest(){
+        // POM TESTİ
+        // https://demoqa.com/ adresine gidin, otomatik bir test yazın
+        Driver.getDriver().get(ConfigReader.getProperty("DemoqaUrl"));
+        // Uyarılar (tüm uyarıları yönetin)
+        DemoqaPage demoqaPage=new DemoqaPage();
+        demoqaPage.ilkAlertCarpi.click();
+        // Etkileşimler (Bırakılabilir düğmeyi tıklayın ve basit modülün altındaki "beni sürükle" kutusunu "bırak beni" kutusuna sürükleyin ve bırakıldığını doğrulayın.)
+        // Widget'lar ( Araç İpuçları düğmesini tıklayın, "Görmek için beni gezdirin" düğmesinin üzerine gelin ve "Vurduğunuzu doğrulayın"
+        // Düğmenin üzerinde" mesajının ardından "Görmek için beni gezdirin" metin alanının üzerine gelin ve "Metin alanının üzerine geldiniz"      mesajını doğrulayın.
+
+
+
+}
 
 
 }
